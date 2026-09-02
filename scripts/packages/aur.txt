@@ -1,0 +1,6 @@
+blackmagic-raw-sdk
+claude-desktop
+cmake-format
+google-chrome
+streambert-bin
+treex

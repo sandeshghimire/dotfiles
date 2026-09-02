@@ -15,7 +15,26 @@ relative to `$HOME`. Stowing a package symlinks it into place:
 | `starship`| `~/.config/starship.toml` |
 | `btop`    | `~/.config/btop/` |
 
-## Deploy on a new machine
+## Reproduce a machine (fresh install)
+
+```bash
+git clone <remote-url> ~/dotfiles
+cd ~/dotfiles
+./scripts/bootstrap.sh
+```
+
+### Scripts
+
+| Script | Purpose |
+|--------|---------|
+| `scripts/bootstrap.sh` | Install all packages from `scripts/packages/` (pacman + AUR via yay/paru), then deploy dotfiles. Assumes an Omarchy/Arch base. |
+| `scripts/sync-packages.sh` | Refresh package lists from the current machine — run after adding/removing software. |
+| `install.sh` | Deploy/re-link all stow packages only. |
+
+Existing configs on the target (e.g. stock Omarchy files) are backed up to
+`~/.dotfiles-backup/<timestamp>/` before stowing, so nothing is lost.
+
+## Deploy dotfiles only
 
 ```bash
 git clone <remote-url> ~/dotfiles
