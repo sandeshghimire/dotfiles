@@ -49,3 +49,37 @@ alias free='free -h'
 alias duh='du -h --max-depth=1 | sort -h'   # disk usage of cwd, sorted by size
 alias ports='ss -tulpn'                      # listening sockets
 alias hist='history'
+
+# Desktop / system
+alias o='omarchy'                            # the omarchy CLI is long
+alias top='btop'
+alias lg='lazygit'
+alias reload='source ~/.bashrc'
+alias ts='tailscale status'
+
+# Pacman / AUR
+alias ys='yay -S'                            # install
+alias yu='yay -Syu'                          # update everything
+
+# systemd / journal
+alias scs='sudo systemctl'
+alias scu='systemctl --user'
+alias jl='journalctl -f'                     # follow system journal
+alias jul='journalctl --user -f'             # follow user journal (voxtype, pi-usage...)
+
+# Files
+alias dot='cd ~/dotfiles'
+alias md='mkdir -pv'
+alias mv='mv -iv'                            # confirm overwrites, explain moves
+alias cp='cp -iv'
+take() { mkdir -p "$1" && cd "$1"; }        # make dir and enter it
+
+# Network / misc
+alias myip='curl -s ifconfig.me && echo'
+alias serve='python3 -m http.server 8000'    # quick file server in cwd
+alias py='python3'
+
+# Git extras
+alias gaa='git add --all'
+alias gsw='git switch'
+alias gpf='git push --force-with-lease'      # safe force push
