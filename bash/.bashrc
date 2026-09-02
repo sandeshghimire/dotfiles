@@ -21,4 +21,15 @@ alias ox='omarchy screenrecord --stop-recording'
 . "$HOME/.cargo/env"
 
 # Serial terminal helper (defines `serial` function)
-source ~/tools/serial.sh
+[[ -r ~/tools/serial.sh ]] && source ~/tools/serial.sh
+
+# Git shortcuts
+alias gm='git commit'
+alias ga='git add'
+alias gp='git push'
+alias gl='git pull'
+alias gst='git status'    # not `gs` — that would shadow ghostscript
+alias gd='git diff'
+alias gco='git checkout'
+alias gb='git branch'
+alias glg='git log --oneline --graph --decorate'
