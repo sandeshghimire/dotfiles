@@ -11,6 +11,7 @@ relative to `$HOME`. Stowing a package symlinks it into place:
 | `git`     | `~/.config/git/` |
 | `hypr`    | `~/.config/hypr/` (Hyprland) |
 | `omarchy` | `~/.config/omarchy/` (shell config, themes, hooks, extensions) |
+| `systemd` | `~/.config/systemd/user/` (custom units + enable state) |
 | `foot`, `alacritty`, `kitty`, `ghostty` | terminal configs |
 | `starship`| `~/.config/starship.toml` |
 | `btop`    | `~/.config/btop/` |
@@ -22,6 +23,14 @@ git clone <remote-url> ~/dotfiles
 cd ~/dotfiles
 ./scripts/bootstrap.sh
 ```
+
+### What `bootstrap.sh` restores
+
+1. **Packages** — pacman explicit list + AUR list (idempotent via `--needed`)
+2. **Root sleep hooks** — `scripts/system-sleep/*` → `/usr/lib/systemd/system-sleep/`
+   (bluetooth resume fix, keyboard-backlight hibernate fix)
+3. **Dotfiles** — every stow package, including user systemd units in `systemd/`
+   (custom services like `voxtype` and their enable-state via `.wants` symlinks)
 
 ### Scripts
 
