@@ -28,11 +28,11 @@ alias gm='git commit'
 alias ga='git add'
 alias gp='git push'
 alias gl='git pull'
-alias gst='git status'    # not `gs` — that would shadow ghostscript
+alias gs='git status'    # not `gs` — that would shadow ghostscript
 alias gd='git diff'
-alias gco='git checkout'
+alias gc='git checkout'
 alias gb='git branch'
-alias glg='git log --oneline --graph --decorate'
+alias gl='git log --oneline --graph --decorate'
 
 # Listing shortcuts (Omarchy's `ls` is already eza -lh --icons; `lsa`, `lt` exist)
 alias ll='ls -lah'              # long, human sizes, incl. hidden files
