@@ -1,0 +1,20 @@
+#!/bin/bash
+# Restart bluetoothd after suspend/resume.
+#
+# Fixes: BLE input devices (e.g. Keychron "Keyboard Craft") appearing connected
+# but dead after closing the lid and resuming. bluetoothd fails to re-arm the
+# HID-over-GATT profile on the Intel AX211 after s2idle resume and floods the
+# log with:
+#   profiles/input/hog-lib.c:report_ccc_written_cb() Write report
+#   characteristic descriptor failed: Request attribute has encountered an
+#   unlikely error
+# Restarting the service forces a clean reconnect of every paired device.
+
+case "$1:$2" in
+    post:suspend|post:suspend-then-hibernate|post:hibernate|post:hybrid-sleep)
+        # Detached via systemd-run so resume is not blocked; give the USB
+        # controller a couple of seconds to settle first.
+        systemd-run --collect --no-block --unit=omarchy-bluetooth-resume \
+            /bin/bash -c 'sleep 2; if systemctl is-active --quiet bluetooth.service; then systemctl restart bluetooth.service; fi'
+        ;;
+esac

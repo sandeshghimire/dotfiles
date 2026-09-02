@@ -1,0 +1,6 @@
+[Unit]
+Description=Regenerate the pi usage record for the omarchy agents panel
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 %h/.config/omarchy/agents/pi-usage.py --write
