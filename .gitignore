@@ -1,0 +1,2 @@
+# Plugin clones have their own .git dirs and are managed by `omarchy plugin` — not tracked
+omarchy/.config/omarchy/plugins/

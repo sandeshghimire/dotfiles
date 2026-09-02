@@ -1,0 +1,43 @@
+{
+  "options": {
+    "dwindle": {
+      "preserve_split": true,
+      "force_split": 0,
+      "smart_split": true,
+      "default_split_ratio": 1.854,
+      "split_bias": 1,
+      "split_width_multiplier": 1.388,
+      "permanent_direction_override": true,
+      "use_active_for_splits": true,
+      "smart_resizing": true,
+      "precise_mouse_move": false,
+      "special_scale_factor": 1
+    },
+    "master": {
+      "orientation": "left",
+      "mfact": 0.55,
+      "new_status": "master",
+      "new_on_top": false,
+      "new_on_active": "none",
+      "slave_count_for_center_master": 0,
+      "center_master_fallback": "left",
+      "smart_resizing": true,
+      "special_scale_factor": 0.378,
+      "allow_small_split": false,
+      "drop_at_cursor": true,
+      "always_keep_position": false,
+      "focus_master_on_close": false
+    },
+    "scrolling": {
+      "column_width": 0.5,
+      "explicit_column_widths": "0.333, 0.5, 0.667, 1.0",
+      "direction": "right",
+      "fullscreen_on_one_column": true,
+      "focus_fit_method": 1,
+      "follow_focus": true,
+      "follow_min_visible": 0.25,
+      "wrap_focus": true,
+      "wrap_swapcol": true
+    }
+  }
+}
