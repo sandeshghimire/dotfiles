@@ -33,3 +33,19 @@ alias gd='git diff'
 alias gco='git checkout'
 alias gb='git branch'
 alias glg='git log --oneline --graph --decorate'
+
+# Listing shortcuts (Omarchy's `ls` is already eza -lh --icons; `lsa`, `lt` exist)
+alias ll='ls -lah'              # long, human sizes, incl. hidden files
+alias lh='ls -lh'               # long, human sizes, visible files only
+alias l='ls'                    # quick long listing
+if command -v eza &>/dev/null; then
+    alias la='eza -a --group-directories-first --icons=auto'    # short columns incl. hidden
+fi
+
+# Everyday helpers
+alias grep='grep --color=auto'
+alias df='df -h'
+alias free='free -h'
+alias duh='du -h --max-depth=1 | sort -h'   # disk usage of cwd, sorted by size
+alias ports='ss -tulpn'                      # listening sockets
+alias hist='history'
