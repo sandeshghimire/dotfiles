@@ -1,27 +1,14 @@
 {
+  "version": 1,
+  "idle": {
+    "screensaver": 150,
+    "lock": 300
+  },
   "bar": {
+    "position": "top",
+    "transparent": true,
     "centerAnchor": "omarchy.clock",
     "layout": {
-      "center": [
-        {
-          "id": "omarchy.indicators"
-        },
-        {
-          "format": "dddd HH:mm",
-          "formatAlt": "d MMMM 'W'ww yyyy",
-          "id": "omarchy.clock",
-          "verticalFormat": "HH\n—\nmm"
-        },
-        {
-          "id": "omarchy.keyboard-layout"
-        },
-        {
-          "id": "omarchy.weather"
-        },
-        {
-          "id": "omarchy.system-update"
-        }
-      ],
       "left": [
         {
           "id": "omarchy.menu"
@@ -30,12 +17,47 @@
           "id": "omarchy.workspaces"
         }
       ],
+      "center": [
+        {
+          "id": "omarchy.indicators"
+        },
+        {
+          "id": "omarchy.keyboard-layout"
+        },
+        {
+          "id": "omarchy.clock",
+          "format": "dddd HH:mm",
+          "formatAlt": "d MMMM 'W'ww yyyy",
+          "verticalFormat": "HH\n—\nmm"
+        },
+        {
+          "id": "omarchy.weather"
+        },
+        {
+          "id": "eduardodallecort.roost"
+        },
+        {
+          "id": "akshar.radio-atlas"
+        },
+        {
+          "id": "ronnie.worldradio"
+        },
+        {
+          "id": "io.github.sahzudin.omarchy-google-search"
+        },
+        {
+          "id": "omarchy.system-update"
+        }
+      ],
       "right": [
         {
           "id": "omarchy.tray"
         },
         {
           "id": "omarchy.tailscale"
+        },
+        {
+          "id": "jankeesvw.time-machine"
         },
         {
           "id": "omarchy.agents"
@@ -56,14 +78,7 @@
           "id": "omarchy.power"
         }
       ]
-    },
-    "position": "top",
-    "transparent": false
+    }
   },
-  "idle": {
-    "lock": 300,
-    "screensaver": 150
-  },
-  "plugins": [],
-  "version": 1
+  "plugins": []
 }
