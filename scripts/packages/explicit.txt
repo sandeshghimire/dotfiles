@@ -50,6 +50,7 @@ fprintd
 freerdp
 fwupd
 fzf
+gedit
 git
 gnome-disk-utility
 gnome-keyring

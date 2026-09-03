@@ -47,6 +47,15 @@ hl.animation({ leaf = "windowsIn", enabled = true, speed = 4, spring = "smoothSl
 --   },
 -- })
 
+-- Use the master layout: main window on the left, others stacked to its right.
+-- Master size: master:mfact (0-1, default 0.55). New windows become the master
+-- (Omarchy default master:new_status = "master"); set "slave" to append instead.
+hl.config({
+  general = {
+    layout = "master",
+  },
+})
+
 -- https://wiki.hypr.land/Configuring/Layouts/Scrolling-Layout/
 -- hl.config({
 --   scrolling = {
