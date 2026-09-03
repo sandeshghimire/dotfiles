@@ -83,3 +83,9 @@ alias py='python3'
 alias gaa='git add --all'
 alias gsw='git switch'
 alias gpf='git push --force-with-lease'      # safe force push
+
+# Serial consoles: type 0-3 to attach
+alias 0='screen /dev/ttyUSB0 115200'
+alias 1='screen /dev/ttyUSB1 115200'
+alias 2='screen /dev/ttyUSB2 115200'
+alias 3='screen /dev/ttyUSB3 115200'
