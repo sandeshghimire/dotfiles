@@ -25,18 +25,6 @@
           "id": "com.leafbox.hamradio"
         },
         {
-          "id": "eduardodallecort.roost"
-        },
-        {
-          "id": "akshar.radio-atlas"
-        },
-        {
-          "id": "ronnie.worldradio"
-        },
-        {
-          "id": "io.github.sahzudin.omarchy-google-search"
-        },
-        {
           "id": "omarchy.system-update"
         }
       ],
@@ -54,9 +42,6 @@
         },
         {
           "id": "omarchy.tailscale"
-        },
-        {
-          "id": "jankeesvw.time-machine"
         },
         {
           "id": "omarchy.agents"
@@ -79,7 +64,7 @@
       ]
     },
     "position": "top",
-    "transparent": true
+    "transparent": false
   },
   "idle": {
     "lock": 300,
