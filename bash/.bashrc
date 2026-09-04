@@ -80,9 +80,9 @@ alias serve='python3 -m http.server 8000'    # quick file server in cwd
 alias py='python3'
 
 # Git extras
-alias gaa='git add --all'
-alias gsw='git switch'
-alias gpf='git push --force-with-lease'      # safe force push
+alias ga='git add --all'
+alias gw='git switch'
+alias gp='git push --force-with-lease'      # safe force push
 
 # Serial consoles: type 0-3 to attach
 alias 0='screen /dev/ttyUSB0 115200'
