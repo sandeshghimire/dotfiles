@@ -23,9 +23,6 @@
 -- Disable a default binding without replacing it.
 -- hl.unbind("SUPER + SHIFT + B")
 
--- TEMPORARY DEBUG: fires when Super is pressed & released alone. Remove after testing.
-o.bind("SUPER + code:125", "DEBUG super key test", "sh -c 'echo seen >> /tmp/super-test'", { release = true })
-
 -- Logitech MX Keys examples:
 -- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
 -- o.bind("SUPER + H", nil, "voxtype record toggle")

@@ -54,6 +54,12 @@ hl.config({
   general = {
     layout = "master",
   },
+
+  master = {
+    -- New windows (e.g. terminals) open on the right side, keeping the
+    -- existing window as master on the left.
+    new_status = "slave",
+  },
 })
 
 -- https://wiki.hypr.land/Configuring/Layouts/Scrolling-Layout/
