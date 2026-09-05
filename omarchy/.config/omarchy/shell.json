@@ -36,21 +36,21 @@
       ],
       "left": [
         {
-          "id": "omarchy.menu"
+          "id": "omarchy.workspaces"
         },
         {
-          "id": "omarchy.workspaces"
+          "id": "omarchy.menu"
         }
       ],
       "right": [
         {
-          "id": "omarchy.tray"
+          "id": "jankeesvw.time-machine"
         },
         {
           "id": "omarchy.tailscale"
         },
         {
-          "id": "jankeesvw.time-machine"
+          "id": "omarchy.tray"
         },
         {
           "id": "omarchy.agents"
@@ -73,7 +73,7 @@
       ]
     },
     "position": "top",
-    "transparent": true
+    "transparent": false
   },
   "idle": {
     "lock": 300,

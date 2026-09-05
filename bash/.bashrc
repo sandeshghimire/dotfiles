@@ -89,3 +89,5 @@ alias 0='screen /dev/ttyUSB0 115200'
 alias 1='screen /dev/ttyUSB1 115200'
 alias 2='screen /dev/ttyUSB2 115200'
 alias 3='screen /dev/ttyUSB3 115200'
+
+. "$HOME/.local/share/../bin/env"
