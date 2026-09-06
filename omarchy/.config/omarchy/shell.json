@@ -7,10 +7,10 @@
           "id": "omarchy.indicators"
         },
         {
-          "format": "dddd HH:mm",
+          "format": "dddd h:mm ap",
           "formatAlt": "d MMMM 'W'ww yyyy",
           "id": "omarchy.clock",
-          "verticalFormat": "HH\n—\nmm"
+          "verticalFormat": "h:mm\n—\nap"
         },
         {
           "id": "omarchy.keyboard-layout"
