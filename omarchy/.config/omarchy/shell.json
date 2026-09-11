@@ -19,9 +19,6 @@
           "id": "omarchy.weather"
         },
         {
-          "id": "io.github.guiestrela.weather"
-        },
-        {
           "id": "eduardodallecort.roost"
         },
         {
@@ -43,9 +40,6 @@
         }
       ],
       "right": [
-        {
-          "id": "jankeesvw.time-machine"
-        },
         {
           "id": "omarchy.tailscale"
         },
